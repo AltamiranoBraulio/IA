@@ -21,3 +21,7 @@ azucar=int(input("¿Cuántas cucharadas de azúcar te gustaría? (1-3): ") or 1)
 leche=input("¿Te gustaría con leche? (si/no): ").lower()=="si"
 extra=input("¿Te gustaría algo extra? (canela, chocolate, crema, etc.): ") or None
 
+cafe_personalizado= preparar cafe(tipo=tipo, tamano=tamano, azucar=azucar, leche=leche, extra=extra)
+
+print("\n+" cafe_personalizado)
+print("\n¡Gracias por tu orden!")
