@@ -10,4 +10,8 @@ def descuento(precio, nombre, porcentaje=18, aplicable=True):
         print()
         print()
 
-        
+descuento(1000, "Laptop", 10)
+descuento(500, "Tablet", 15, False)     
+descuento(200, "iPhone", 20)    
+descuento(300, "Smartwatch", 5, False)
+    
