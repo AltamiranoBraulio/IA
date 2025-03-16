@@ -1,5 +1,5 @@
 def cafe(tipo="americano", tamano="mediano", azucar=1, leche=False, extra=None ):
-    descripcion="preparando café {tipo} {tamano}"
+    descripcion=f"preparando café {tipo} {tamano}"
     if leche:
         descripcion+=" con leche"
     if extra:
