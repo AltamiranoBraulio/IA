@@ -1,0 +1,1 @@
+def descuento(precio, porcentaje)
