@@ -1,4 +1,4 @@
-def cafe(tipo="americano", tamano="mediano", azucar=1, leche=false, extra=None ):
+def cafe(tipo="americano", tamano="mediano", azucar=1, leche=False, extra=None ):
     descricion="preparando café {tipo} {tamano}"
     if leche:
         descricion+=" con leche"
@@ -6,7 +6,7 @@ def cafe(tipo="americano", tamano="mediano", azucar=1, leche=false, extra=None )
         descricion+=" y "+extra
     descricion + f", con {azucar} cucharadas de azúcar"
 
-return descricion
+    return descripcion
 
 
 
@@ -21,7 +21,7 @@ azucar=int(input("¿Cuántas cucharadas de azúcar te gustaría? (1-3): ") or 1)
 leche=input("¿Te gustaría con leche? (si/no): ").lower()=="si"
 extra=input("¿Te gustaría algo extra? (canela, chocolate, crema, etc.): ") or None
 
-cafe_personalizado= preparar cafe(tipo=tipo, tamano=tamano, azucar=azucar, leche=leche, extra=extra)
+cafe_personalizado= cafe(tipo=tipo, tamano=tamano, azucar=azucar, leche=leche, extra=extra)
 
-print("\n+" cafe_personalizado)
+print("\n"+ cafe_personalizado)
 print("\n¡Gracias por tu orden!")
