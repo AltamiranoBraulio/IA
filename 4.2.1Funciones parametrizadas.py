@@ -1,6 +1,6 @@
 def area_rectangulo(a ,b):
-area=a*b
-return area
+    area=a*b
+    return area
 
 
-print(area(8,8))
+print(area_rectangulo(8,8))
