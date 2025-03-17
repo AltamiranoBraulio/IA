@@ -10,7 +10,7 @@ def is_year_leap(year):
     
 
 def days_in_month(year, month):
-    if month < 1 or month > 12 or year < 1
+    if month < 1 or month > 12 or year < 1:
        return None
     
     day_per_month= [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]  
@@ -20,4 +20,17 @@ def days_in_month(year, month):
     return day_per_month[month]
 
 
-test
+test_years =[1900, 2000, 2016, 1987, 2024, -5, 2023]
+test_months = [2, 2, 1, 11, 2, 13, 6]
+test_results = [28, 29, 31, 30, 29, None, 30]
+
+
+for in range(len(test_years)):
+    yr = test_years[i]
+    mo = test_months[i]
+    print(yr, mo, "->", end="")
+    results = days_in_month(yr, mo)
+    if result == test_results[i]:
+        print("ok")
+    else:
+        print("error")
