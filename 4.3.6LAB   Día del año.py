@@ -53,5 +53,11 @@ expected_results=[59, 60, 15, 334, 60, None, None, None]
 
 for i in range (len(test_dates)):
     yr, mo, dy = test_dates[i]
-     
+    print(f"{yr}-{mo}-{dy}-> ", end="")
+    result = day_of_year(yr, mo, dy)
+
+    if result == expected_results[i]:
+        print("OK")
+    else:
+        print("Error")  
                   
