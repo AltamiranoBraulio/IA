@@ -35,3 +35,20 @@ def tres_en_raya():
         try:
             movimiento = int(input("Ingresa tu movimiento (1-9): "))
             if movimiento < 1 or movimiento > 9:
+                print("Número inválido. Intenta de nuevo.")
+                continue
+            fila = (movimiento - 1) // 3
+            columna = (movimiento - 1) % 3
+            if tablero[fila][columna] in ['X', 'O']:
+                print("Casilla ocupada. Intenta de nuevo.")
+                continue
+            tablero[fila][columna] = 'O'
+        except ValueError:
+            print("Entrada inválida. Intenta de nuevo.")
+            continue
+                mostrar_tablero(tablero)
+        if verificar_ganador(tablero, 'O'):
+            print("¡Has Ganado!")
+            break
+        if tablero_lleno(tablero):
+            print("¡Empate!")
