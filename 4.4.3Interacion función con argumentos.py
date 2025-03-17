@@ -14,7 +14,7 @@ inventario_frutas = ["manzanas", "peras", "uvas"]
 manzanas_en_inventario =10
 
 agregar_fruta(inventario_frutas, "naranjas")
-modificar_manzanas(manzanas_en_inventario)
+manzanas(manzanas_en_inventario)
 
 print("|nventario de frutas:", inventario_frutas)
 print(f"manzanas en inventario: {manzanas_en_inventario}")
