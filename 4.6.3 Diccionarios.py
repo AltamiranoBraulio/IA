@@ -18,3 +18,12 @@ while True:
     print("2. Buscar contacto")
     print("3. Mostrar agenda")
     print("4. Salir")
+    opcion = input("Selecciona una opción: ")
+    if opcion == "1":
+        nombre = input("Ingresa el nombre del contacto: ")
+        telefono = input("Ingresa el teléfono del contacto: ")
+        agregar_contacto(nombre, telefono)
+    elif opcion == "2":
+        nombre = input("Ingresa el nombre del contacto a buscar: ")
+        buscar_contacto(nombre)
+    elif opcion == "3":
