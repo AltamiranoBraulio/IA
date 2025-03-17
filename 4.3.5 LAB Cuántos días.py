@@ -7,3 +7,6 @@ def is_year_leap(year):
         return True
     else:
         return False
+    
+
+    def day 
