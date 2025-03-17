@@ -1,5 +1,5 @@
 def verificar_ingredientes(ingredientes_disponibles):
-    ingredientes_necesarios=["masa, queso, salsa, pepperoni, champiñones, aceitunas, pimientos]
+    ingredientes_necesarios=["masa", "queso", "salsa", "pepperoni", "champiñones", "aceitunas", "pimientos"]
     ingredientes_faltantes=[]
     for ingredientes in ingredientes_necesarios:
         if ingredientes not in ingredientes_disponibles:
