@@ -7,7 +7,7 @@ def is_prime(num):
         return False
     
 
-for i in a range(3, int(num**0.5 )+ 1, 2):
+for i in range(3, int(num**0.5 )+ 1, 2):
     if num % i == 0:
         return False
     return True
