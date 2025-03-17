@@ -15,7 +15,7 @@ def verificar_ganador(tablero, jugador):
     if all([tablero[i][i] == jugador for i in range(3)]):  # Diagonal principal
         return True
         if all([tablero[i][2 - i] == jugador for i in range(3)]):  # Diagonal secundaria
-        return True
+            return True
     return False
 def tablero_lleno(tablero):
     return all([celda in ['X', 'O'] for fila in tablero for celda in fila])
@@ -46,10 +46,10 @@ def tres_en_raya():
         except ValueError:
             print("Entrada inválida. Intenta de nuevo.")
             continue
-                mostrar_tablero(tablero)
-        if verificar_ganador(tablero, 'O'):
+    mostrar_tablero(tablero)
+    if verificar_ganador(tablero, 'O'):
             print("¡Has Ganado!")
-            break
+    break
         if tablero_lleno(tablero):
             print("¡Empate!")
             break
