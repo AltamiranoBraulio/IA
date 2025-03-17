@@ -2,7 +2,7 @@ alumnos = {}
 while True:
     nombre = input("Ingresa el nombre del alumno (o deja vacío para terminar): ")
     if nombre == "":
-break  
+        break  
     calificacion = float(input("Ingresa la calificación del alumno: "))
     if nombre in alumnos:
         alumnos[nombre].append(calificacion)
