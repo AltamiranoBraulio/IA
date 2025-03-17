@@ -24,3 +24,14 @@ def movimiento_maquina(tablero):
         movimiento = randrange(1, 10)  # Elige un número aleatorio del 1 al 9
         fila = (movimiento - 1) // 3
         columna = (movimiento - 1) % 3
+        if tablero[fila][columna] not in ['X', 'O']:  # Verifica si la casilla está libre
+            tablero[fila][columna] = 'X'
+            break
+def tres_en_raya():
+    tablero = [[str(i + 1 + j * 3) for i in range(3)] for j in range(3)]
+    tablero[1][1] = 'X'  # La máquina siempre empieza en el centro
+    mostrar_tablero(tablero)
+    while True:
+        try:
+            movimiento = int(input("Ingresa tu movimiento (1-9): "))
+            if movimiento < 1 or movimiento > 9:
