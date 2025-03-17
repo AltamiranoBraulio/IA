@@ -52,3 +52,14 @@ def tres_en_raya():
             break
         if tablero_lleno(tablero):
             print("¡Empate!")
+            break
+        print("Turno de la máquina...")
+        movimiento_maquina(tablero)
+        mostrar_tablero(tablero)
+        if verificar_ganador(tablero, 'X'):
+            print("¡La máquina ha ganado!")
+            break
+        if tablero_lleno(tablero):
+            print("¡Empate!")
+break
+tres_en_raya()
