@@ -1,30 +1,33 @@
 def maquina (producto, dinero):
     precio=0
-    if producto == refresco:
+    if producto == "refresco":
         cambio = dinero - 15
-        return refresco, cambio
+        return "refresco", cambio
+        print("Elegiste un refresco tu cambio es de $", cambio)
     else:
-        if producto == papas:
+        if producto == "papas":
             cambio = dinero - 10
-            return papas, cambio
+            return "papas", cambio
         else:
-            if producto == chocolate:
+            if producto == "chocolate":
                 cambio = dinero - 12
-                return chocolate, cambio
+                return "chocolate", cambio
             else:
-                if producto == galletas:
+                if producto == "galletas":
                     cambio = dinero - 8
-                    return galletas, cambio
+                    return "galletas", cambio
                 else:
-                    if producto == agua:
+                    if producto == "agua":
                         cambio = dinero - 7
-                        return agua, cambio
+                        return "agua", cambio
                     else:
-                        if producto == chicles:
+                        if producto == "chicles":
                             cambio = dinero - 5
-                            return chicles, cambio
+                            return "chicles", cambio
                         else:
                             return "Producto no disponible"
 
 
 
+producto = maquina("refresco", 20)
+print(producto) 
