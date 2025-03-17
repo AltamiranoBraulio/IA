@@ -3,7 +3,7 @@ def maquina (producto, dinero):
     if producto == "refresco":
         cambio = dinero - 15
         return "refresco", cambio
-        print("Elegiste un refresco tu cambio es de $", cambio)
+        
     else:
         if producto == "papas":
             cambio = dinero - 10
@@ -29,5 +29,5 @@ def maquina (producto, dinero):
 
 
 
-producto = maquina("refresco", 20)
-print(producto) 
+producto, cambio = maquina("refresco", 20)
+print(f"tu producto es {producto} y tu cambio es ${cambio}") 
