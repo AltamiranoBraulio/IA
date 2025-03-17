@@ -27,3 +27,9 @@ while True:
         nombre = input("Ingresa el nombre del contacto a buscar: ")
         buscar_contacto(nombre)
     elif opcion == "3":
+        mostrar_agenda()
+    elif opcion == "4":
+        print("Saliendo de la agenda...")
+        break
+    else:
+        print("Opción no válida. Intenta de nuevo.")
