@@ -12,3 +12,9 @@ def mostrar_agenda():
         for nombre, telefono in agenda.items():
             print(f"Nombre: {nombre}, Teléfono: {telefono}")
     else:
+while True:
+    print("\n--- Menú ---")
+    print("1. Agregar contacto")
+    print("2. Buscar contacto")
+    print("3. Mostrar agenda")
+    print("4. Salir")
