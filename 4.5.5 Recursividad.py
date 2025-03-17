@@ -6,4 +6,7 @@ def factorial(n):
         return n * factorial(n-1)
     
 
-    
+
+num=5
+resultado = factorial(num)
+print(f"El factorial de {num} es {resultado}")
