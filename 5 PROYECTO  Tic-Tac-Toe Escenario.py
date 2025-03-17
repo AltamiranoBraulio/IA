@@ -14,4 +14,13 @@ def verificar_ganador(tablero, jugador):
             return True
     if all([tablero[i][i] == jugador for i in range(3)]):  # Diagonal principal
         return True
-    
+        if all([tablero[i][2 - i] == jugador for i in range(3)]):  # Diagonal secundaria
+        return True
+    return False
+def tablero_lleno(tablero):
+    return all([celda in ['X', 'O'] for fila in tablero for celda in fila])
+def movimiento_maquina(tablero):
+    while True:
+        movimiento = randrange(1, 10)  # Elige un número aleatorio del 1 al 9
+        fila = (movimiento - 1) // 3
+        columna = (movimiento - 1) % 3
