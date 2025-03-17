@@ -25,7 +25,7 @@ test_months = [2, 2, 1, 11, 2, 13, 6]
 test_results = [28, 29, 31, 30, 29, None, 30]
 
 
-for in range(len(test_years)):
+for i in range(len(test_years)):
     yr = test_years[i]
     mo = test_months[i]
     print(yr, mo, "->", end="")
